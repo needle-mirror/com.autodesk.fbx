@@ -1,8 +1,19 @@
 {
-"name": "com.autodesk.fbx",
-"version" : "2.0.0-preview",
-"displayName" : "FBX SDK CSharp Bindings",
-"unity": "2018.2",
-"description" : "This package provides C# bindings to the Autodesk FBX SDK.",
-"keywords" : [ "fbx", "animation", "modeling", "maya", "max" ]
+    "description": "This package provides Unity C# bindings to the Autodesk\u00ae FBX\u00ae SDK.", 
+    "displayName": "Autodesk FBX SDK", 
+    "keywords": [
+        "fbx", 
+        "animation", 
+        "modeling", 
+        "maya", 
+        "max"
+    ], 
+    "name": "com.autodesk.fbx", 
+    "repository": {
+        "revision": "205fe008686ad8a673326f6343286be9eb3d59e3", 
+        "type": "git", 
+        "url": "git@github.com:Unity-Technologies/FbxSharp.git"
+    },
+    "unity": "2018.2", 
+    "version": "2.0.0-preview.4"
 }
