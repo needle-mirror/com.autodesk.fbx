@@ -53,48 +53,62 @@ class NativeMethods {
                                 ExceptionArgumentDelegate argumentNullDelegate,
                                 ExceptionArgumentDelegate argumentOutOfRangeDelegate);
 
+    [AOT.MonoPInvokeCallback(typeof(ExceptionDelegate))]
     static void SetPendingApplicationException(string message) {
       SWIGPendingException.Set(new global::System.ApplicationException(message, SWIGPendingException.Retrieve()));
     }
+    [AOT.MonoPInvokeCallback(typeof(ExceptionDelegate))]
     static void SetPendingArithmeticException(string message) {
       SWIGPendingException.Set(new global::System.ArithmeticException(message, SWIGPendingException.Retrieve()));
     }
+    [AOT.MonoPInvokeCallback(typeof(ExceptionDelegate))]
     static void SetPendingDivideByZeroException(string message) {
       SWIGPendingException.Set(new global::System.DivideByZeroException(message, SWIGPendingException.Retrieve()));
     }
+    [AOT.MonoPInvokeCallback(typeof(ExceptionDelegate))]
     static void SetPendingIndexOutOfRangeException(string message) {
       SWIGPendingException.Set(new global::System.IndexOutOfRangeException(message, SWIGPendingException.Retrieve()));
     }
+    [AOT.MonoPInvokeCallback(typeof(ExceptionDelegate))]
     static void SetPendingInvalidCastException(string message) {
       SWIGPendingException.Set(new global::System.InvalidCastException(message, SWIGPendingException.Retrieve()));
     }
+    [AOT.MonoPInvokeCallback(typeof(ExceptionDelegate))]
     static void SetPendingInvalidOperationException(string message) {
       SWIGPendingException.Set(new global::System.InvalidOperationException(message, SWIGPendingException.Retrieve()));
     }
+    [AOT.MonoPInvokeCallback(typeof(ExceptionDelegate))]
     static void SetPendingIOException(string message) {
       SWIGPendingException.Set(new global::System.IO.IOException(message, SWIGPendingException.Retrieve()));
     }
+    [AOT.MonoPInvokeCallback(typeof(ExceptionDelegate))]
     static void SetPendingNullReferenceException(string message) {
       SWIGPendingException.Set(new global::System.NullReferenceException(message, SWIGPendingException.Retrieve()));
     }
+    [AOT.MonoPInvokeCallback(typeof(ExceptionDelegate))]
     static void SetPendingOutOfMemoryException(string message) {
       SWIGPendingException.Set(new global::System.OutOfMemoryException(message, SWIGPendingException.Retrieve()));
     }
+    [AOT.MonoPInvokeCallback(typeof(ExceptionDelegate))]
     static void SetPendingOverflowException(string message) {
       SWIGPendingException.Set(new global::System.OverflowException(message, SWIGPendingException.Retrieve()));
     }
+    [AOT.MonoPInvokeCallback(typeof(ExceptionDelegate))]
     static void SetPendingSystemException(string message) {
       SWIGPendingException.Set(new global::System.SystemException(message, SWIGPendingException.Retrieve()));
     }
 
+    [AOT.MonoPInvokeCallback(typeof(ExceptionArgumentDelegate))]
     static void SetPendingArgumentException(string message, string paramName) {
       SWIGPendingException.Set(new global::System.ArgumentException(message, paramName, SWIGPendingException.Retrieve()));
     }
+    [AOT.MonoPInvokeCallback(typeof(ExceptionArgumentDelegate))]
     static void SetPendingArgumentNullException(string message, string paramName) {
       global::System.Exception e = SWIGPendingException.Retrieve();
       if (e != null) message = message + " Inner Exception: " + e.Message;
       SWIGPendingException.Set(new global::System.ArgumentNullException(paramName, message));
     }
+    [AOT.MonoPInvokeCallback(typeof(ExceptionArgumentDelegate))]
     static void SetPendingArgumentOutOfRangeException(string message, string paramName) {
       global::System.Exception e = SWIGPendingException.Retrieve();
       if (e != null) message = message + " Inner Exception: " + e.Message;
@@ -172,6 +186,7 @@ class NativeMethods {
     [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="SWIGRegisterStringCallback_Globals")]
     public static extern void SWIGRegisterStringCallback_Globals(SWIGStringDelegate stringDelegate);
 
+    [AOT.MonoPInvokeCallback(typeof(SWIGStringDelegate))]
     static string CreateString(string cString) {
       return cString;
     }
@@ -234,12 +249,6 @@ class NativeMethods {
 #else
   #error "FbxSdk: C# bindings for this platform haven't been implemented yet, sorry."
   const string DllImportName = "UnityFbxSdkNative";
-#endif
-
-// Because of a non-static delegate (ProgressCallback) that is called from NativeFBX->Managed, 
-// we are not supporting IL2CPP
-#if ENABLE_IL2CPP
-     #error Autodesk.Fbx is not supported on IL2CPP
 #endif
 
 
