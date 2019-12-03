@@ -112,6 +112,12 @@ public class FbxConstraintParent : FbxConstraint {
     return ret;
   }
 
+  public FbxProperty GetTranslationOffsetProperty(FbxObject pObject) {
+    FbxProperty ret = new FbxProperty(NativeMethods.FbxConstraintParent_GetTranslationOffsetProperty(swigCPtr, FbxObject.getCPtr(pObject)), true);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
   public virtual void SetRotationOffset(FbxObject pObject, FbxVector4 pRotation) {
     NativeMethods.FbxConstraintParent_SetRotationOffset(swigCPtr, FbxObject.getCPtr(pObject), pRotation);
     if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
@@ -119,6 +125,12 @@ public class FbxConstraintParent : FbxConstraint {
 
   public FbxVector4 GetRotationOffset(FbxObject pObject) {
     var ret = NativeMethods.FbxConstraintParent_GetRotationOffset(swigCPtr, FbxObject.getCPtr(pObject));
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public FbxProperty GetRotationOffsetProperty(FbxObject pObject) {
+    FbxProperty ret = new FbxProperty(NativeMethods.FbxConstraintParent_GetRotationOffsetProperty(swigCPtr, FbxObject.getCPtr(pObject)), true);
     if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
     return ret;
   }

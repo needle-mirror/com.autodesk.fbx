@@ -10,13 +10,10 @@
   ],
   "name": "com.autodesk.fbx",
   "unity": "2018.2",
-  "version": "2.0.1-preview.1",
-  "relatedPackages": {
-    "com.autodesk.fbx.tests": "2.0.1-preview.1"
-  },
+  "version": "3.0.0-preview.1",
   "repository": {
     "type": "git",
-    "url": "git@github.com:Unity-Technologies/FbxSharp.git",
-    "revision": "c869942e672582609a80ff96872ae1fc08232331"
+    "url": "git@github.com:Unity-Technologies/com.autodesk.fbx.git",
+    "revision": "70465c0b44a0858ac10d326afe541a952b5d2b12"
   }
 }

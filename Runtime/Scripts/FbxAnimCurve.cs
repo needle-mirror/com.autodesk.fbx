@@ -94,6 +94,29 @@ public class FbxAnimCurve : FbxAnimCurveBase {
     if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
   }
 
+  public virtual FbxAnimCurveDef.ETangentMode KeyGetTangentMode(int pKeyIndex, bool pIncludeOverrides) {
+    FbxAnimCurveDef.ETangentMode ret = (FbxAnimCurveDef.ETangentMode)NativeMethods.FbxAnimCurve_KeyGetTangentMode__SWIG_0(swigCPtr, pKeyIndex, pIncludeOverrides);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public virtual FbxAnimCurveDef.ETangentMode KeyGetTangentMode(int pKeyIndex) {
+    FbxAnimCurveDef.ETangentMode ret = (FbxAnimCurveDef.ETangentMode)NativeMethods.FbxAnimCurve_KeyGetTangentMode__SWIG_1(swigCPtr, pKeyIndex);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public virtual void KeySetTangentMode(int pKeyIndex, FbxAnimCurveDef.ETangentMode pTangent) {
+    NativeMethods.FbxAnimCurve_KeySetTangentMode(swigCPtr, pKeyIndex, (int)pTangent);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+  }
+
+  public virtual FbxAnimCurveKey KeyGet(int pIndex) {
+    FbxAnimCurveKey ret = new FbxAnimCurveKey(NativeMethods.FbxAnimCurve_KeyGet(swigCPtr, pIndex), true);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
   public virtual float KeyGetValue(int pKeyIndex) {
     float ret = NativeMethods.FbxAnimCurve_KeyGetValue(swigCPtr, pKeyIndex);
     if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();

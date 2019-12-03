@@ -66,6 +66,34 @@ public static class FbxAnimCurveDef {
     eWeightedAll = eWeightedRight|eWeightedNextLeft
   }
 
+  public enum EVelocityMode {
+    eVelocityNone = 0x00000000,
+    eVelocityRight = 0x10000000,
+    eVelocityNextLeft = 0x20000000,
+    eVelocityAll = eVelocityRight|eVelocityNextLeft
+  }
+
+  public enum ETangentVisibility {
+    eTangentShowNone = 0x00000000,
+    eTangentShowLeft = 0x00100000,
+    eTangentShowRight = 0x00200000,
+    eTangentShowBoth = eTangentShowLeft|eTangentShowRight
+  }
+
+  public enum EDataIndex {
+    eRightSlope = 0,
+    eNextLeftSlope = 1,
+    eWeights = 2,
+    eRightWeight = 2,
+    eNextLeftWeight = 3,
+    eVelocity = 4,
+    eRightVelocity = 4,
+    eNextLeftVelocity = 5,
+    eTCBTension = 0,
+    eTCBContinuity = 1,
+    eTCBBias = 2
+  }
+
 }
 
 }

@@ -3,13 +3,11 @@
     "references": [],
     "optionalUnityReferences": [],
     "includePlatforms": [
-        "Editor"
+        "Editor",
+        "LinuxStandalone64",
+        "macOSStandalone",
+        "WindowsStandalone64"
     ],
     "excludePlatforms": [],
-    "allowUnsafeCode": false,
-    "overrideReferences": false,
-    "precompiledReferences": [],
-    "autoReferenced": true,
-    "defineConstraints": [],
-    "versionDefines": []
+    "allowUnsafeCode": false
 }

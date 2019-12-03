@@ -108,6 +108,11 @@ public class FbxAxisSystem : global::System.IDisposable {
     } 
   }
 
+  public void DeepConvertScene(FbxScene pScene) {
+    NativeMethods.FbxAxisSystem_DeepConvertScene(swigCPtr, FbxScene.getCPtr(pScene));
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+  }
+
   public void ConvertScene(FbxScene pScene) {
     NativeMethods.FbxAxisSystem_ConvertScene(swigCPtr, FbxScene.getCPtr(pScene));
     if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();

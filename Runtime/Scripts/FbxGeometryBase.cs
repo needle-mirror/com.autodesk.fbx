@@ -34,12 +34,6 @@ public class FbxGeometryBase : FbxLayerContainer {
     if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
   }
 
-  public virtual FbxVector4 GetControlPointAt(int pIndex) {
-    var ret = NativeMethods.FbxGeometryBase_GetControlPointAt(swigCPtr, pIndex);
-    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
-    return ret;
-  }
-
   public virtual int GetControlPointsCount() {
     int ret = NativeMethods.FbxGeometryBase_GetControlPointsCount(swigCPtr);
     if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
@@ -97,6 +91,12 @@ public class FbxGeometryBase : FbxLayerContainer {
   public void SetControlPointAt(FbxVector4 pCtrlPoint, int pIndex) {
     NativeMethods.FbxGeometryBase_SetControlPointAt(swigCPtr, pCtrlPoint, pIndex);
     if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+  }
+
+  public FbxVector4 GetControlPointAt(int pIndex) {
+    var ret = NativeMethods.FbxGeometryBase_GetControlPointAt(swigCPtr, pIndex);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+    return ret;
   }
 
 }

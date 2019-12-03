@@ -333,6 +333,7 @@ public class FbxTime : global::System.IDisposable {
     eFrames96,
     eFrames72,
     eFrames59dot94,
+    eFrames119dot88,
     eModesCount
   }
 

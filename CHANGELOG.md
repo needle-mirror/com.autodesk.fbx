@@ -1,31 +1,18 @@
 # Changes in FBX SDK C# Bindings
 
-## [2.0.1-preview.1] - 2019-06-19
-
-NEW FEATURES
-* Added IL2CPP build support for bindings
-
-KNOWN ISSUES
-* Using the FbxExporter::SetProgressCallback function with IL2CPP will give Runtime errors
-
-## [2.0.0-preview.7] - 2018-02-08
-CHANGES
-* Fixed compiler warnings in tests
-
-## [2.0.0-preview.6] - 2018-02-01
+## [3.0.0-preview.1] - 2019-12-03
 
 CHANGES
-* Updated asmdefs to only include Editor platform
+* Upgraded to FBX SDK 2020.0
+* Added bindings for FbxAnimCurve::KeySetTangents and FbxAnimCurve::KeyGetTangents
+* Added bindings for FbxAnimCurveKey methods to set and get tangent mode and data
+* Added bindings for FbxAxisSystem::DeepConvertScene
 
-## [2.0.0-preview.5] - 2018-01-25
+BUGFIXES
+* The FBX SDK C# Bindings package now supports the IL2CPP backend.
 
-CHANGES
-* Moved tests into separate package
-
-## [2.0.0-preview.4] - 2018-12-04
-
-CHANGES
-* Updated changelog
+KNOW ISSUES
+* For Linux support use Ubuntu 18.04 (Bionic Beaver). The FBX SDK C# Bindings package is not compatible with CentOS 7.
 
 ## [2.0.0-preview.3] - 2018-12-03
 

@@ -410,6 +410,24 @@ public class FbxNode : FbxObject {
     return !(a == b);
   }
 
+  public FbxLimits GetTranslationLimits() {
+    FbxLimits ret = new FbxLimits(NativeMethods.FbxNode_GetTranslationLimits(swigCPtr), false);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public FbxLimits GetRotationLimits() {
+    FbxLimits ret = new FbxLimits(NativeMethods.FbxNode_GetRotationLimits(swigCPtr), false);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public FbxLimits GetScalingLimits() {
+    FbxLimits ret = new FbxLimits(NativeMethods.FbxNode_GetScalingLimits(swigCPtr), false);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
   public enum EShadingMode {
     eHardShading,
     eWireFrame,
