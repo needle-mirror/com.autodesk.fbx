@@ -230,26 +230,9 @@ class NativeMethods {
   /// <summary>
   /// String to use in the DllImport below.
   ///
-  /// This must be a constant, but it changes depending on the platform and deployment.
-  ///
-  /// When deploying as an asset (a .unitypackage), define
-  /// COM_UNITY_FORMATS_FBX_AS_ASSET and compile the package.
-  ///
-  /// When deploying with Unity Package Manager, do not add defines: the
-  /// default platform defines suffice.
+  /// This must be a constant.
   /// </summary>
-#if COM_UNITY_FORMATS_FBX_AS_ASSET || UNITY_STANDALONE 
   const string DllImportName = "UnityFbxSdkNative";
-#elif UNITY_EDITOR_OSX
-  const string DllImportName = "Packages/com.autodesk.fbx/MacOS/UnityFbxSdkNative.bundle/Contents/MacOS/UnityFbxSdkNative";
-#elif UNITY_EDITOR_LINUX
-  const string DllImportName = "Packages/com.autodesk.fbx/Linux/UnityFbxSdkNative.so";
-#elif UNITY_EDITOR_WIN
-  const string DllImportName = "Packages/com.autodesk.fbx/Windows/UnityFbxSdkNative.dll";
-#else
-  #error "FbxSdk: C# bindings for this platform haven't been implemented yet, sorry."
-  const string DllImportName = "UnityFbxSdkNative";
-#endif
 
 
 
