@@ -10,11 +10,13 @@
   ],
   "name": "com.autodesk.fbx",
   "unity": "2018.2",
-  "version": "3.0.1-preview.1",
+  "version": "3.1.0-preview.1",
+  "upmCi": {
+    "footprint": "991c739f40603462a6a4681183e51f0a4eccfec3"
+  },
   "repository": {
-    "footprint": "e66202d4c6187ece88310a61e0f744be1ee340b2",
-    "type": "git",
     "url": "https://github.com/Unity-Technologies/com.autodesk.fbx.git",
-    "revision": "acf0666333735d1d1262aa3b82c119537e5ff753"
+    "type": "git",
+    "revision": "6a2ff5e31dc4cb4f6985dfae69ac66d956d2d857"
   }
 }
