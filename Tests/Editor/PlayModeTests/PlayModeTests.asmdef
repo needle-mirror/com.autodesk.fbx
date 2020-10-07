@@ -8,5 +8,8 @@
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
+    "defineConstraints": [
+        "!FBX_RUNNING_BUILD_TEST"
+    ],
     "allowUnsafeCode": false
 }
