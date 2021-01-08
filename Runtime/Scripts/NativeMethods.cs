@@ -1795,6 +1795,9 @@ class NativeMethods {
   [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_new_FbxStatus__SWIG_2___")]
   public static extern global::System.IntPtr new_FbxStatus__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1);
 
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_delete_FbxStatus___")]
+  public static extern void delete_FbxStatus(global::System.Runtime.InteropServices.HandleRef jarg1);
+
   [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxStatus__equals___")]
   public static extern bool FbxStatus__equals(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
 
@@ -1815,9 +1818,6 @@ class NativeMethods {
 
   [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxStatus_SetCode__SWIG_1___")]
   public static extern void FbxStatus_SetCode__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, string jarg3);
-
-  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_delete_FbxStatus___")]
-  public static extern void delete_FbxStatus(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_new_FbxQuaternion__SWIG_0___")]
   public static extern global::System.IntPtr new_FbxQuaternion__SWIG_0();
