@@ -463,6 +463,9 @@ class NativeMethods {
   [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxProperty_Set__SWIG_2___")]
   public static extern bool FbxProperty_Set__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2);
 
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxProperty_Set__SWIG_3___")]
+  public static extern bool FbxProperty_Set__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, [global::System.Runtime.InteropServices.MarshalAs(global::System.Runtime.InteropServices.UnmanagedType.LPStr)]string jarg2);
+
   [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxPropertyBool_Set___")]
   public static extern global::System.IntPtr FbxPropertyBool_Set(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2);
 
@@ -508,6 +511,21 @@ class NativeMethods {
   [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxPropertyDouble3_EvaluateValue__SWIG_2___")]
   public static extern FbxDouble3 FbxPropertyDouble3_EvaluateValue__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1);
 
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxPropertyInt_Set___")]
+  public static extern global::System.IntPtr FbxPropertyInt_Set(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxPropertyInt_Get___")]
+  public static extern int FbxPropertyInt_Get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxPropertyInt_EvaluateValue__SWIG_0___")]
+  public static extern int FbxPropertyInt_EvaluateValue__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, bool jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxPropertyInt_EvaluateValue__SWIG_1___")]
+  public static extern int FbxPropertyInt_EvaluateValue__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxPropertyInt_EvaluateValue__SWIG_2___")]
+  public static extern int FbxPropertyInt_EvaluateValue__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1);
+
   [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxPropertyString_Set___")]
   public static extern global::System.IntPtr FbxPropertyString_Set(global::System.Runtime.InteropServices.HandleRef jarg1, [global::System.Runtime.InteropServices.MarshalAs(global::System.Runtime.InteropServices.UnmanagedType.LPStr)]string jarg2);
 
@@ -526,21 +544,6 @@ class NativeMethods {
   [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxPropertyString_EvaluateValue__SWIG_2___")]
   [return: global::System.Runtime.InteropServices.MarshalAs(global::System.Runtime.InteropServices.UnmanagedType.LPStr)]
   public static extern string FbxPropertyString_EvaluateValue__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1);
-
-  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxPropertyInt_Set___")]
-  public static extern global::System.IntPtr FbxPropertyInt_Set(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
-
-  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxPropertyInt_Get___")]
-  public static extern int FbxPropertyInt_Get(global::System.Runtime.InteropServices.HandleRef jarg1);
-
-  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxPropertyInt_EvaluateValue__SWIG_0___")]
-  public static extern int FbxPropertyInt_EvaluateValue__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, bool jarg3);
-
-  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxPropertyInt_EvaluateValue__SWIG_1___")]
-  public static extern int FbxPropertyInt_EvaluateValue__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
-
-  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxPropertyInt_EvaluateValue__SWIG_2___")]
-  public static extern int FbxPropertyInt_EvaluateValue__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxPropertyFloat_Set___")]
   public static extern global::System.IntPtr FbxPropertyFloat_Set(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2);
@@ -4376,11 +4379,11 @@ class NativeMethods {
   [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxPropertyDouble3_SWIGUpcast___")]
   public static extern global::System.IntPtr FbxPropertyDouble3_SWIGUpcast(global::System.IntPtr jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxPropertyString_SWIGUpcast___")]
-  public static extern global::System.IntPtr FbxPropertyString_SWIGUpcast(global::System.IntPtr jarg1);
-
   [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxPropertyInt_SWIGUpcast___")]
   public static extern global::System.IntPtr FbxPropertyInt_SWIGUpcast(global::System.IntPtr jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxPropertyString_SWIGUpcast___")]
+  public static extern global::System.IntPtr FbxPropertyString_SWIGUpcast(global::System.IntPtr jarg1);
 
   [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxPropertyFloat_SWIGUpcast___")]
   public static extern global::System.IntPtr FbxPropertyFloat_SWIGUpcast(global::System.IntPtr jarg1);

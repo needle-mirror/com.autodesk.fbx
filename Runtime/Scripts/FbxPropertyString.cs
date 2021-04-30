@@ -36,7 +36,7 @@ public class FbxPropertyString : FbxProperty {
     }
   }
 
-  public FbxPropertyString Set(string pValue) {
+  public new FbxPropertyString Set(string pValue) {
     FbxPropertyString ret = new FbxPropertyString(NativeMethods.FbxPropertyString_Set(swigCPtr, pValue), false);
     if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
     return ret;

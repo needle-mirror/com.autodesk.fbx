@@ -1,5 +1,11 @@
 # Changes in FBX SDK C# Bindings
 
+## [4.1.0-pre.1] - 2021-04-30
+
+NEW FEATURES
+* Add support for Apple M1.
+* Add binding to set a string on an FbxProperty.
+
 ## [4.0.1] - 2021-03-10
 
 CHANGES

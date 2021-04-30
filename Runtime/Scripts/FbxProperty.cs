@@ -488,6 +488,12 @@ public class FbxProperty : global::System.IDisposable {
     return ret;
   }
 
+  public bool Set(string pValue) {
+    bool ret = NativeMethods.FbxProperty_Set__SWIG_3(swigCPtr, pValue);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
 }
 
 }
