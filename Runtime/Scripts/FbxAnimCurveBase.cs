@@ -16,8 +16,25 @@ public class FbxAnimCurveBase : FbxObject {
 
   // override void Dispose() {base.Dispose();}
 
+  public virtual void KeyClear() {
+    NativeMethods.FbxAnimCurveBase_KeyClear(swigCPtr);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+  }
+
   public virtual int KeyGetCount() {
     int ret = NativeMethods.FbxAnimCurveBase_KeyGetCount(swigCPtr);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public virtual bool KeyRemove(int pIndex) {
+    bool ret = NativeMethods.FbxAnimCurveBase_KeyRemove__SWIG_0(swigCPtr, pIndex);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public virtual bool KeyRemove(int pStartIndex, int pEndIndex) {
+    bool ret = NativeMethods.FbxAnimCurveBase_KeyRemove__SWIG_1(swigCPtr, pStartIndex, pEndIndex);
     if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
     return ret;
   }
@@ -26,6 +43,11 @@ public class FbxAnimCurveBase : FbxObject {
     FbxTime ret = new FbxTime(NativeMethods.FbxAnimCurveBase_KeyGetTime(swigCPtr, arg0), true);
     if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
     return ret;
+  }
+
+  public virtual void KeySetTime(int pKeyIndex, FbxTime pTime) {
+    NativeMethods.FbxAnimCurveBase_KeySetTime(swigCPtr, pKeyIndex, FbxTime.getCPtr(pTime));
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
   }
 
   public override int GetHashCode(){

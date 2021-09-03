@@ -2218,8 +2218,20 @@ class NativeMethods {
   [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxCollection_AddMember___")]
   public static extern bool FbxCollection_AddMember(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
 
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxCollection_RemoveMember___")]
+  public static extern bool FbxCollection_RemoveMember(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
   [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxCollection_GetMemberCount___")]
   public static extern int FbxCollection_GetMemberCount(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxCollection_GetMember__SWIG_0___")]
+  public static extern global::System.IntPtr FbxCollection_GetMember__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxCollection_GetMember__SWIG_1___")]
+  public static extern global::System.IntPtr FbxCollection_GetMember__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxCollection_IsMember___")]
+  public static extern bool FbxCollection_IsMember(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
 
   [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxCollection_GetAnimLayerMember__SWIG_0___")]
   public static extern global::System.IntPtr FbxCollection_GetAnimLayerMember__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
@@ -2754,8 +2766,23 @@ class NativeMethods {
   [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxGeometryBase_CreateElementNormal___")]
   public static extern global::System.IntPtr FbxGeometryBase_CreateElementNormal(global::System.Runtime.InteropServices.HandleRef jarg1);
 
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxGeometryBase_CreateElementBinormal___")]
+  public static extern global::System.IntPtr FbxGeometryBase_CreateElementBinormal(global::System.Runtime.InteropServices.HandleRef jarg1);
+
   [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxGeometryBase_CreateElementTangent___")]
   public static extern global::System.IntPtr FbxGeometryBase_CreateElementTangent(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxGeometryBase_CreateElementMaterial___")]
+  public static extern global::System.IntPtr FbxGeometryBase_CreateElementMaterial(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxGeometryBase_CreateElementVertexColor___")]
+  public static extern global::System.IntPtr FbxGeometryBase_CreateElementVertexColor(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxGeometryBase_CreateElementUV__SWIG_0___")]
+  public static extern global::System.IntPtr FbxGeometryBase_CreateElementUV__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, int jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxGeometryBase_CreateElementUV__SWIG_1___")]
+  public static extern global::System.IntPtr FbxGeometryBase_CreateElementUV__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
 
   [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxGeometryBase_SetControlPointAt___")]
   public static extern void FbxGeometryBase_SetControlPointAt(global::System.Runtime.InteropServices.HandleRef jarg1, FbxVector4 jarg2, int jarg3);
@@ -3570,11 +3597,23 @@ class NativeMethods {
   [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxAnimStack_SetLocalTimeSpan___")]
   public static extern void FbxAnimStack_SetLocalTimeSpan(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
 
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxAnimCurveBase_KeyClear___")]
+  public static extern void FbxAnimCurveBase_KeyClear(global::System.Runtime.InteropServices.HandleRef jarg1);
+
   [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxAnimCurveBase_KeyGetCount___")]
   public static extern int FbxAnimCurveBase_KeyGetCount(global::System.Runtime.InteropServices.HandleRef jarg1);
 
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxAnimCurveBase_KeyRemove__SWIG_0___")]
+  public static extern bool FbxAnimCurveBase_KeyRemove__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxAnimCurveBase_KeyRemove__SWIG_1___")]
+  public static extern bool FbxAnimCurveBase_KeyRemove__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, int jarg3);
+
   [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxAnimCurveBase_KeyGetTime___")]
   public static extern global::System.IntPtr FbxAnimCurveBase_KeyGetTime(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxAnimCurveBase_KeySetTime___")]
+  public static extern void FbxAnimCurveBase_KeySetTime(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxAnimCurveDef_sDEFAULT_WEIGHT_get___")]
   public static extern float FbxAnimCurveDef_sDEFAULT_WEIGHT_get();
@@ -3651,6 +3690,12 @@ class NativeMethods {
   [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxAnimCurve_KeyAdd__SWIG_1___")]
   public static extern int FbxAnimCurve_KeyAdd__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
 
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxAnimCurve_KeyRemove__SWIG_0___")]
+  public static extern bool FbxAnimCurve_KeyRemove__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxAnimCurve_KeyRemove__SWIG_1___")]
+  public static extern bool FbxAnimCurve_KeyRemove__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, int jarg3);
+
   [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxAnimCurve_KeySet__SWIG_0___")]
   public static extern void FbxAnimCurve_KeySet__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, float jarg4, int jarg5, int jarg6, float jarg7, float jarg8, int jarg9, float jarg10, float jarg11, float jarg12, float jarg13);
 
@@ -3681,6 +3726,12 @@ class NativeMethods {
   [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxAnimCurve_KeySet__SWIG_9___")]
   public static extern void FbxAnimCurve_KeySet__SWIG_9(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, float jarg4);
 
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxAnimCurve_KeyGetInterpolation___")]
+  public static extern int FbxAnimCurve_KeyGetInterpolation(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxAnimCurve_KeySetInterpolation___")]
+  public static extern void FbxAnimCurve_KeySetInterpolation(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, int jarg3);
+
   [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxAnimCurve_KeyGetTangentMode__SWIG_0___")]
   public static extern int FbxAnimCurve_KeyGetTangentMode__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, bool jarg3);
 
@@ -3695,6 +3746,75 @@ class NativeMethods {
 
   [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxAnimCurve_KeyGetValue___")]
   public static extern float FbxAnimCurve_KeyGetValue(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxAnimCurve_KeySetValue___")]
+  public static extern void FbxAnimCurve_KeySetValue(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, float jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxAnimCurve_KeyIncValue___")]
+  public static extern void FbxAnimCurve_KeyIncValue(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, float jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxAnimCurve_KeyMultValue___")]
+  public static extern void FbxAnimCurve_KeyMultValue(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, float jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxAnimCurve_KeySetBreak___")]
+  public static extern void FbxAnimCurve_KeySetBreak(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, bool jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxAnimCurve_KeyGetBreak___")]
+  public static extern bool FbxAnimCurve_KeyGetBreak(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxAnimCurve_KeyGetLeftDerivative___")]
+  public static extern float FbxAnimCurve_KeyGetLeftDerivative(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxAnimCurve_KeySetLeftDerivative___")]
+  public static extern void FbxAnimCurve_KeySetLeftDerivative(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, float jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxAnimCurve_KeyGetLeftAuto__SWIG_0___")]
+  public static extern float FbxAnimCurve_KeyGetLeftAuto__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, bool jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxAnimCurve_KeyGetLeftAuto__SWIG_1___")]
+  public static extern float FbxAnimCurve_KeyGetLeftAuto__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxAnimCurve_KeyGetRightDerivative___")]
+  public static extern float FbxAnimCurve_KeyGetRightDerivative(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxAnimCurve_KeySetRightDerivative___")]
+  public static extern void FbxAnimCurve_KeySetRightDerivative(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, float jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxAnimCurve_KeyGetRightAuto__SWIG_0___")]
+  public static extern float FbxAnimCurve_KeyGetRightAuto__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, bool jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxAnimCurve_KeyGetRightAuto__SWIG_1___")]
+  public static extern float FbxAnimCurve_KeyGetRightAuto__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxAnimCurve_KeyIsLeftTangentWeighted___")]
+  public static extern bool FbxAnimCurve_KeyIsLeftTangentWeighted(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxAnimCurve_KeyIsRightTangentWeighted___")]
+  public static extern bool FbxAnimCurve_KeyIsRightTangentWeighted(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxAnimCurve_KeyGetLeftTangentWeight___")]
+  public static extern float FbxAnimCurve_KeyGetLeftTangentWeight(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxAnimCurve_KeyGetRightTangentWeight___")]
+  public static extern float FbxAnimCurve_KeyGetRightTangentWeight(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxAnimCurve_KeySetLeftTangentWeight__SWIG_0___")]
+  public static extern void FbxAnimCurve_KeySetLeftTangentWeight__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, float jarg3, bool jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxAnimCurve_KeySetLeftTangentWeight__SWIG_1___")]
+  public static extern void FbxAnimCurve_KeySetLeftTangentWeight__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, float jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxAnimCurve_KeySetRightTangentWeight__SWIG_0___")]
+  public static extern void FbxAnimCurve_KeySetRightTangentWeight__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, float jarg3, bool jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxAnimCurve_KeySetRightTangentWeight__SWIG_1___")]
+  public static extern void FbxAnimCurve_KeySetRightTangentWeight__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, float jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxAnimCurve_KeyGetLeftTangentVelocity___")]
+  public static extern float FbxAnimCurve_KeyGetLeftTangentVelocity(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxAnimCurve_KeyGetRightTangentVelocity___")]
+  public static extern float FbxAnimCurve_KeyGetRightTangentVelocity(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
 
   [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_new_FbxAnimCurveFilterUnroll___")]
   public static extern global::System.IntPtr new_FbxAnimCurveFilterUnroll();

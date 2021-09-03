@@ -45,6 +45,18 @@ public class FbxAnimCurve : FbxAnimCurveBase {
     return ret;
   }
 
+  public override bool KeyRemove(int pIndex) {
+    bool ret = NativeMethods.FbxAnimCurve_KeyRemove__SWIG_0(swigCPtr, pIndex);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public override bool KeyRemove(int pStartIndex, int pEndIndex) {
+    bool ret = NativeMethods.FbxAnimCurve_KeyRemove__SWIG_1(swigCPtr, pStartIndex, pEndIndex);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
   public virtual void KeySet(int pKeyIndex, FbxTime pTime, float pValue, FbxAnimCurveDef.EInterpolationType pInterpolation, FbxAnimCurveDef.ETangentMode pTangentMode, float pData0, float pData1, FbxAnimCurveDef.EWeightedMode pTangentWeightMode, float pWeight0, float pWeight1, float pVelocity0, float pVelocity1) {
     NativeMethods.FbxAnimCurve_KeySet__SWIG_0(swigCPtr, pKeyIndex, FbxTime.getCPtr(pTime), pValue, (int)pInterpolation, (int)pTangentMode, pData0, pData1, (int)pTangentWeightMode, pWeight0, pWeight1, pVelocity0, pVelocity1);
     if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
@@ -95,6 +107,17 @@ public class FbxAnimCurve : FbxAnimCurveBase {
     if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
   }
 
+  public virtual FbxAnimCurveDef.EInterpolationType KeyGetInterpolation(int pKeyIndex) {
+    FbxAnimCurveDef.EInterpolationType ret = (FbxAnimCurveDef.EInterpolationType)NativeMethods.FbxAnimCurve_KeyGetInterpolation(swigCPtr, pKeyIndex);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public virtual void KeySetInterpolation(int pKeyIndex, FbxAnimCurveDef.EInterpolationType pInterpolation) {
+    NativeMethods.FbxAnimCurve_KeySetInterpolation(swigCPtr, pKeyIndex, (int)pInterpolation);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+  }
+
   public virtual FbxAnimCurveDef.ETangentMode KeyGetTangentMode(int pKeyIndex, bool pIncludeOverrides) {
     FbxAnimCurveDef.ETangentMode ret = (FbxAnimCurveDef.ETangentMode)NativeMethods.FbxAnimCurve_KeyGetTangentMode__SWIG_0(swigCPtr, pKeyIndex, pIncludeOverrides);
     if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
@@ -120,6 +143,134 @@ public class FbxAnimCurve : FbxAnimCurveBase {
 
   public virtual float KeyGetValue(int pKeyIndex) {
     float ret = NativeMethods.FbxAnimCurve_KeyGetValue(swigCPtr, pKeyIndex);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public virtual void KeySetValue(int pKeyIndex, float pValue) {
+    NativeMethods.FbxAnimCurve_KeySetValue(swigCPtr, pKeyIndex, pValue);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+  }
+
+  public virtual void KeyIncValue(int pKeyIndex, float pValue) {
+    NativeMethods.FbxAnimCurve_KeyIncValue(swigCPtr, pKeyIndex, pValue);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+  }
+
+  public virtual void KeyMultValue(int pKeyIndex, float pValue) {
+    NativeMethods.FbxAnimCurve_KeyMultValue(swigCPtr, pKeyIndex, pValue);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+  }
+
+  public virtual void KeySetBreak(int pKeyIndex, bool pVal) {
+    NativeMethods.FbxAnimCurve_KeySetBreak(swigCPtr, pKeyIndex, pVal);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+  }
+
+  public virtual bool KeyGetBreak(int pKeyIndex) {
+    bool ret = NativeMethods.FbxAnimCurve_KeyGetBreak(swigCPtr, pKeyIndex);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public virtual float KeyGetLeftDerivative(int pIndex) {
+    float ret = NativeMethods.FbxAnimCurve_KeyGetLeftDerivative(swigCPtr, pIndex);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public virtual void KeySetLeftDerivative(int pIndex, float pValue) {
+    NativeMethods.FbxAnimCurve_KeySetLeftDerivative(swigCPtr, pIndex, pValue);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+  }
+
+  public virtual float KeyGetLeftAuto(int pIndex, bool pApplyOvershootProtection) {
+    float ret = NativeMethods.FbxAnimCurve_KeyGetLeftAuto__SWIG_0(swigCPtr, pIndex, pApplyOvershootProtection);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public virtual float KeyGetLeftAuto(int pIndex) {
+    float ret = NativeMethods.FbxAnimCurve_KeyGetLeftAuto__SWIG_1(swigCPtr, pIndex);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public virtual float KeyGetRightDerivative(int pIndex) {
+    float ret = NativeMethods.FbxAnimCurve_KeyGetRightDerivative(swigCPtr, pIndex);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public virtual void KeySetRightDerivative(int pIndex, float pValue) {
+    NativeMethods.FbxAnimCurve_KeySetRightDerivative(swigCPtr, pIndex, pValue);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+  }
+
+  public virtual float KeyGetRightAuto(int pIndex, bool pApplyOvershootProtection) {
+    float ret = NativeMethods.FbxAnimCurve_KeyGetRightAuto__SWIG_0(swigCPtr, pIndex, pApplyOvershootProtection);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public virtual float KeyGetRightAuto(int pIndex) {
+    float ret = NativeMethods.FbxAnimCurve_KeyGetRightAuto__SWIG_1(swigCPtr, pIndex);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public virtual bool KeyIsLeftTangentWeighted(int pIndex) {
+    bool ret = NativeMethods.FbxAnimCurve_KeyIsLeftTangentWeighted(swigCPtr, pIndex);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public virtual bool KeyIsRightTangentWeighted(int pIndex) {
+    bool ret = NativeMethods.FbxAnimCurve_KeyIsRightTangentWeighted(swigCPtr, pIndex);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public virtual float KeyGetLeftTangentWeight(int pIndex) {
+    float ret = NativeMethods.FbxAnimCurve_KeyGetLeftTangentWeight(swigCPtr, pIndex);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public virtual float KeyGetRightTangentWeight(int pIndex) {
+    float ret = NativeMethods.FbxAnimCurve_KeyGetRightTangentWeight(swigCPtr, pIndex);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public virtual void KeySetLeftTangentWeight(int pIndex, float pWeight, bool pAdjustTan) {
+    NativeMethods.FbxAnimCurve_KeySetLeftTangentWeight__SWIG_0(swigCPtr, pIndex, pWeight, pAdjustTan);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+  }
+
+  public virtual void KeySetLeftTangentWeight(int pIndex, float pWeight) {
+    NativeMethods.FbxAnimCurve_KeySetLeftTangentWeight__SWIG_1(swigCPtr, pIndex, pWeight);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+  }
+
+  public virtual void KeySetRightTangentWeight(int pIndex, float pWeight, bool pAdjustTan) {
+    NativeMethods.FbxAnimCurve_KeySetRightTangentWeight__SWIG_0(swigCPtr, pIndex, pWeight, pAdjustTan);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+  }
+
+  public virtual void KeySetRightTangentWeight(int pIndex, float pWeight) {
+    NativeMethods.FbxAnimCurve_KeySetRightTangentWeight__SWIG_1(swigCPtr, pIndex, pWeight);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+  }
+
+  public virtual float KeyGetLeftTangentVelocity(int pIndex) {
+    float ret = NativeMethods.FbxAnimCurve_KeyGetLeftTangentVelocity(swigCPtr, pIndex);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public virtual float KeyGetRightTangentVelocity(int pIndex) {
+    float ret = NativeMethods.FbxAnimCurve_KeyGetRightTangentVelocity(swigCPtr, pIndex);
     if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
     return ret;
   }

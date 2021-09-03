@@ -41,8 +41,34 @@ public class FbxCollection : FbxObject {
     return ret;
   }
 
+  public virtual bool RemoveMember(FbxObject pMember) {
+    bool ret = NativeMethods.FbxCollection_RemoveMember(swigCPtr, FbxObject.getCPtr(pMember));
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
   public int GetMemberCount() {
     int ret = NativeMethods.FbxCollection_GetMemberCount(swigCPtr);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public FbxObject GetMember(int pIndex) {
+    global::System.IntPtr cPtr = NativeMethods.FbxCollection_GetMember__SWIG_0(swigCPtr, pIndex);
+    FbxObject ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxObject(cPtr, false);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public FbxObject GetMember() {
+    global::System.IntPtr cPtr = NativeMethods.FbxCollection_GetMember__SWIG_1(swigCPtr);
+    FbxObject ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxObject(cPtr, false);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public virtual bool IsMember(FbxObject pMember) {
+    bool ret = NativeMethods.FbxCollection_IsMember(swigCPtr, FbxObject.getCPtr(pMember));
     if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
     return ret;
   }

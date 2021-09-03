@@ -48,9 +48,44 @@ public class FbxGeometryBase : FbxLayerContainer {
     return ret;
   }
 
+  public FbxLayerElementBinormal CreateElementBinormal() {
+    global::System.IntPtr cPtr = NativeMethods.FbxGeometryBase_CreateElementBinormal(swigCPtr);
+    FbxLayerElementBinormal ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxLayerElementBinormal(cPtr, false);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
   public FbxLayerElementTangent CreateElementTangent() {
     global::System.IntPtr cPtr = NativeMethods.FbxGeometryBase_CreateElementTangent(swigCPtr);
     FbxLayerElementTangent ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxLayerElementTangent(cPtr, false);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public FbxLayerElementMaterial CreateElementMaterial() {
+    global::System.IntPtr cPtr = NativeMethods.FbxGeometryBase_CreateElementMaterial(swigCPtr);
+    FbxLayerElementMaterial ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxLayerElementMaterial(cPtr, false);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public FbxLayerElementVertexColor CreateElementVertexColor() {
+    global::System.IntPtr cPtr = NativeMethods.FbxGeometryBase_CreateElementVertexColor(swigCPtr);
+    FbxLayerElementVertexColor ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxLayerElementVertexColor(cPtr, false);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public FbxLayerElementUV CreateElementUV(string pUVSetName, FbxLayerElement.EType pTypeIdentifier) {
+    global::System.IntPtr cPtr = NativeMethods.FbxGeometryBase_CreateElementUV__SWIG_0(swigCPtr, pUVSetName, (int)pTypeIdentifier);
+    FbxLayerElementUV ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxLayerElementUV(cPtr, false);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public FbxLayerElementUV CreateElementUV(string pUVSetName) {
+    global::System.IntPtr cPtr = NativeMethods.FbxGeometryBase_CreateElementUV__SWIG_1(swigCPtr, pUVSetName);
+    FbxLayerElementUV ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxLayerElementUV(cPtr, false);
     if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
     return ret;
   }
