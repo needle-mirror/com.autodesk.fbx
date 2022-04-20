@@ -80,6 +80,19 @@ public class FbxScene : FbxDocument {
     return ret;
   }
 
+  public int GetMaterialCount() {
+    int ret = NativeMethods.FbxScene_GetMaterialCount(swigCPtr);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public FbxSurfaceMaterial GetMaterial(int pIndex) {
+    global::System.IntPtr cPtr = NativeMethods.FbxScene_GetMaterial__SWIG_0(swigCPtr, pIndex);
+    FbxSurfaceMaterial ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxSurfaceMaterial(cPtr, false);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
   public int GetNodeCount() {
     int ret = NativeMethods.FbxScene_GetNodeCount(swigCPtr);
     if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
@@ -118,6 +131,13 @@ public class FbxScene : FbxDocument {
 
   public static bool operator != (FbxScene a, FbxScene b) {
     return !(a == b);
+  }
+
+  public FbxSurfaceMaterial GetMaterial(string pName) {
+    global::System.IntPtr cPtr = NativeMethods.FbxScene_GetMaterial__SWIG_1(swigCPtr, pName);
+    FbxSurfaceMaterial ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxSurfaceMaterial(cPtr, false);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+    return ret;
   }
 
 }

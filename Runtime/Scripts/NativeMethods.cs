@@ -2368,8 +2368,17 @@ class NativeMethods {
   [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxScene_GetCurrentAnimationStack___")]
   public static extern global::System.IntPtr FbxScene_GetCurrentAnimationStack(global::System.Runtime.InteropServices.HandleRef jarg1);
 
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxScene_GetMaterialCount___")]
+  public static extern int FbxScene_GetMaterialCount(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxScene_GetMaterial__SWIG_0___")]
+  public static extern global::System.IntPtr FbxScene_GetMaterial__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
   [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxScene_GetNodeCount___")]
   public static extern int FbxScene_GetNodeCount(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxScene_GetMaterial__SWIG_1___")]
+  public static extern global::System.IntPtr FbxScene_GetMaterial__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
 
   [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_IOSROOT_get___")]
   public static extern string IOSROOT_get();
@@ -2642,6 +2651,9 @@ class NativeMethods {
 
   [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxNode_AddMaterial___")]
   public static extern int FbxNode_AddMaterial(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxNode_GetMaterialCount___")]
+  public static extern int FbxNode_GetMaterialCount(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxNode_GetMaterial___")]
   public static extern global::System.IntPtr FbxNode_GetMaterial(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);

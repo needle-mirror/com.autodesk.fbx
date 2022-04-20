@@ -331,6 +331,12 @@ public class FbxNode : FbxObject {
     return ret;
   }
 
+  public int GetMaterialCount() {
+    int ret = NativeMethods.FbxNode_GetMaterialCount(swigCPtr);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
   public FbxSurfaceMaterial GetMaterial(int pIndex) {
     global::System.IntPtr cPtr = NativeMethods.FbxNode_GetMaterial(swigCPtr, pIndex);
     FbxSurfaceMaterial ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxSurfaceMaterial(cPtr, false);
