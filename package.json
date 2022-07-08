@@ -10,19 +10,19 @@
   ],
   "name": "com.autodesk.fbx",
   "unity": "2018.4",
-  "version": "4.2.0-pre.1",
+  "version": "4.2.0",
   "author": {
     "name": "Unity"
   },
-  "upm": {
-    "changelog": "NEW FEATURES\r\n* Added bindings for FbxScene::GetMaterialCount, FbxScene::GetMaterial, FbxNode::GetMaterialCount."
+  "_upm": {
+    "changelog": "Released, no changes from release candidate 4.2.0-pre.1."
   },
   "upmCi": {
-    "footprint": "493b55df4a50c3e0b8169ff88c625031298ce8d5"
+    "footprint": "0be3a8a43c482f6d01ef57c07749c6e208e67f0a"
   },
   "repository": {
     "url": "https://github.com/Unity-Technologies/com.autodesk.fbx.git",
     "type": "git",
-    "revision": "ba45a502f24e4d42fc7768ff6e8c882e973e2a3d"
+    "revision": "22c84fc8d7f91440a57d5c8e828375e248e155b9"
   }
 }
