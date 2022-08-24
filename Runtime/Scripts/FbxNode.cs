@@ -265,6 +265,39 @@ public class FbxNode : FbxObject {
     return ret;
   }
 
+  public void SetGeometricTranslation(FbxNode.EPivotSet pPivotSet, FbxVector4 pVector) {
+    NativeMethods.FbxNode_SetGeometricTranslation(swigCPtr, (int)pPivotSet, pVector);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+  }
+
+  public FbxVector4 GetGeometricTranslation(FbxNode.EPivotSet pPivotSet) {
+    var ret = NativeMethods.FbxNode_GetGeometricTranslation(swigCPtr, (int)pPivotSet);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public void SetGeometricRotation(FbxNode.EPivotSet pPivotSet, FbxVector4 pVector) {
+    NativeMethods.FbxNode_SetGeometricRotation(swigCPtr, (int)pPivotSet, pVector);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+  }
+
+  public FbxVector4 GetGeometricRotation(FbxNode.EPivotSet pPivotSet) {
+    var ret = NativeMethods.FbxNode_GetGeometricRotation(swigCPtr, (int)pPivotSet);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public void SetGeometricScaling(FbxNode.EPivotSet pPivotSet, FbxVector4 pVector) {
+    NativeMethods.FbxNode_SetGeometricScaling(swigCPtr, (int)pPivotSet, pVector);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+  }
+
+  public FbxVector4 GetGeometricScaling(FbxNode.EPivotSet pPivotSet) {
+    var ret = NativeMethods.FbxNode_GetGeometricScaling(swigCPtr, (int)pPivotSet);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
   public FbxAMatrix EvaluateGlobalTransform(FbxTime pTime, FbxNode.EPivotSet pPivotSet, bool pApplyTarget, bool pForceEval) {
     FbxAMatrix ret = new FbxAMatrix(NativeMethods.FbxNode_EvaluateGlobalTransform__SWIG_0(swigCPtr, FbxTime.getCPtr(pTime), (int)pPivotSet, pApplyTarget, pForceEval), false);
     if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();

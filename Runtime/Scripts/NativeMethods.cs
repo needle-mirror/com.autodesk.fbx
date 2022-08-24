@@ -731,8 +731,11 @@ class NativeMethods {
   [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxLayerElementArray_GetCount___")]
   public static extern int FbxLayerElementArray_GetCount(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxLayerElementArray_SetCount___")]
-  public static extern void FbxLayerElementArray_SetCount(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxLayerElementArray_SetCount__SWIG_0___")]
+  public static extern bool FbxLayerElementArray_SetCount__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, int jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxLayerElementArray_SetCount__SWIG_1___")]
+  public static extern bool FbxLayerElementArray_SetCount__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
 
   [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxLayerElementArray_Add__SWIG_1___")]
   public static extern int FbxLayerElementArray_Add__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
@@ -2618,6 +2621,24 @@ class NativeMethods {
 
   [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxNode_GetScalingPivot___")]
   public static extern FbxVector4 FbxNode_GetScalingPivot(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxNode_SetGeometricTranslation___")]
+  public static extern void FbxNode_SetGeometricTranslation(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, FbxVector4 jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxNode_GetGeometricTranslation___")]
+  public static extern FbxVector4 FbxNode_GetGeometricTranslation(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxNode_SetGeometricRotation___")]
+  public static extern void FbxNode_SetGeometricRotation(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, FbxVector4 jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxNode_GetGeometricRotation___")]
+  public static extern FbxVector4 FbxNode_GetGeometricRotation(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxNode_SetGeometricScaling___")]
+  public static extern void FbxNode_SetGeometricScaling(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, FbxVector4 jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxNode_GetGeometricScaling___")]
+  public static extern FbxVector4 FbxNode_GetGeometricScaling(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
 
   [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxNode_EvaluateGlobalTransform__SWIG_0___")]
   public static extern global::System.IntPtr FbxNode_EvaluateGlobalTransform__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3, bool jarg4, bool jarg5);

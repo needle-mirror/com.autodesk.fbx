@@ -50,9 +50,16 @@ public class FbxLayerElementArray : global::System.IDisposable {
     return ret;
   }
 
-  public void SetCount(int pCount) {
-    NativeMethods.FbxLayerElementArray_SetCount(swigCPtr, pCount);
+  public bool SetCount(int pCount, EFbxMemoryClearMode pInitializeMode) {
+    bool ret = NativeMethods.FbxLayerElementArray_SetCount__SWIG_0(swigCPtr, pCount, (int)pInitializeMode);
     if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public bool SetCount(int pCount) {
+    bool ret = NativeMethods.FbxLayerElementArray_SetCount__SWIG_1(swigCPtr, pCount);
+    if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+    return ret;
   }
 
   public int Add(int pItem) {
