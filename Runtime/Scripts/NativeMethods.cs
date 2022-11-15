@@ -731,8 +731,11 @@ class NativeMethods {
   [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxLayerElementArray_GetCount___")]
   public static extern int FbxLayerElementArray_GetCount(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxLayerElementArray_SetCount___")]
-  public static extern void FbxLayerElementArray_SetCount(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxLayerElementArray_SetCount__SWIG_0___")]
+  public static extern bool FbxLayerElementArray_SetCount__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, int jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxLayerElementArray_SetCount__SWIG_1___")]
+  public static extern bool FbxLayerElementArray_SetCount__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
 
   [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxLayerElementArray_Add__SWIG_1___")]
   public static extern int FbxLayerElementArray_Add__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
