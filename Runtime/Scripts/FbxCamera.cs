@@ -182,6 +182,22 @@ public class FbxCamera : FbxNodeAttribute {
     } 
   }
 
+  public FbxPropertyBool UseDepthOfField {
+    get {
+      FbxPropertyBool ret = new FbxPropertyBool(NativeMethods.FbxCamera_UseDepthOfField_get(swigCPtr), false);
+      if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+      return ret;
+    } 
+  }
+
+  public FbxPropertyDouble FocusDistance {
+    get {
+      FbxPropertyDouble ret = new FbxPropertyDouble(NativeMethods.FbxCamera_FocusDistance_get(swigCPtr), false);
+      if (NativeMethods.SWIGPendingException.Pending) throw NativeMethods.SWIGPendingException.Retrieve();
+      return ret;
+    } 
+  }
+
   public override int GetHashCode(){
       return swigCPtr.Handle.GetHashCode();
   }

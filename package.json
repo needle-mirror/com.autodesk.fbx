@@ -10,20 +10,20 @@
   ],
   "name": "com.autodesk.fbx",
   "unity": "2020.3",
-  "version": "5.0.0",
+  "version": "5.1.0-pre.1",
   "author": {
     "name": "Unity"
   },
   "_upm": {
-    "changelog": "CHANGES\n* Update FBX SDK to 2020.3.2."
+    "changelog": "NEW FEATURES\n* Expose FbxCamera focus distance and use depth of field properties."
   },
   "upmCi": {
-    "footprint": "c6df2ce7582a2e52f0664c906331f1901831c50b"
+    "footprint": "8d14e1d8458aba1d5861aa137e51e747b89abc0c"
   },
-  "documentationUrl": "https://docs.unity3d.com/Packages/com.autodesk.fbx@5.0/manual/index.html",
+  "documentationUrl": "https://docs.unity3d.com/Packages/com.autodesk.fbx@5.1/manual/index.html",
   "repository": {
     "url": "https://github.com/Unity-Technologies/com.autodesk.fbx.git",
     "type": "git",
-    "revision": "ac2a886aaa0b29a89191d7807df59ad2b4624e17"
+    "revision": "2ac801e212e24ec7ac1bb903b36d9d23877172c4"
   }
 }

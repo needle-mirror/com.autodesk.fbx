@@ -4048,6 +4048,12 @@ class NativeMethods {
   [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxCamera_ProjectionType_get___")]
   public static extern global::System.IntPtr FbxCamera_ProjectionType_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxCamera_UseDepthOfField_get___")]
+  public static extern global::System.IntPtr FbxCamera_UseDepthOfField_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FbxCamera_FocusDistance_get___")]
+  public static extern global::System.IntPtr FbxCamera_FocusDistance_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
   [global::System.Runtime.InteropServices.DllImport(DllImportName, EntryPoint="CSharp_AutodeskfFbx_FBXSDK_CAMERA_PERSPECTIVE_get___")]
   public static extern string FBXSDK_CAMERA_PERSPECTIVE_get();
 
