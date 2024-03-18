@@ -10,20 +10,20 @@
   ],
   "name": "com.autodesk.fbx",
   "unity": "2020.3",
-  "version": "5.1.0",
+  "version": "5.1.1",
   "author": {
     "name": "Unity"
   },
   "_upm": {
-    "changelog": "* Updated package version number for release."
+    "changelog": "* Update FBX SDK to 2020.3.4.\n* Add support for Windows ARM64."
   },
   "upmCi": {
-    "footprint": "a418e4cecc10964a5807afec4c84424b9f9bc60f"
+    "footprint": "ebede7872fa3fe6d341414e158cadcad553bb7b1"
   },
   "documentationUrl": "https://docs.unity3d.com/Packages/com.autodesk.fbx@5.1/manual/index.html",
   "repository": {
     "url": "https://github.com/Unity-Technologies/com.autodesk.fbx.git",
     "type": "git",
-    "revision": "b2100717fcd3ca653d33c99b8451ea96de451419"
+    "revision": "dccfc2a79ac7abfe7bd6f91f713f990f2fedd141"
   }
 }
